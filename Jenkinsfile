@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'pip install --upgrade pip'
+                sh 'apt-get install pip'
                 sh 'pip install flask'
             }
         }
