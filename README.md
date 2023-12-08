@@ -8,7 +8,7 @@ Baixe e execute o repositório: https://github.com/joseMarcus/jenkins
 
 ## Dê as permissões necessárias e adicione o usuário Jenkins
 
-Utilize os comandos abaixos para dar as permissões necessárias: \
+Utilize os comandos abaixos para dar as permissões necessárias:
 
 cd /var/run \
 sudo chmod 777 docker.sock \
@@ -21,10 +21,10 @@ sudo usermod -aG docker $USER
 
 ## Crie a pipeline
 
-Após as permissões, efetue o login e crie a pipeline para o projeto: \
+Após as permissões, efetue o login e crie a pipeline para o projeto:
 
 Nova tarefa -> {nome} + Pipeline + "Tudo certo" \
-{descrição} + Definition(Pipeline script from SCM) + SCM(Git) + {Adicione o link deste repositório} + Branch{*/main} 
+{descrição} + Definition(Pipeline script from SCM) + SCM(Git) + {Adicione o link deste repositório} + Branch{*/main} \
 -> Salvar
 
 ## Execute a pipeline
