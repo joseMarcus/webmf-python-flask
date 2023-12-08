@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'python:3.13-rc-bookworm' } }
+    agent { docker { image 'python:3.10' } }
     stages {
         stage('build') {
             steps {
@@ -8,7 +8,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                sh 'python test.py'
+                sh 'python3 test.py'
             }
         }
     }
