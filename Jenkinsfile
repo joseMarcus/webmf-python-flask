@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'pip install flask'
+                sh 'bash -c pip install flask'
             }
         }
         stage('test') {
             steps {
-                sh 'python3 test.py'
+                sh 'bash -c python3 test.py'
             }
         }
     }
